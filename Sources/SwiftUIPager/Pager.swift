@@ -109,7 +109,7 @@ public struct Pager<Element, ID, PageView>: View  where PageView: View, Element:
     var opacityIncrement: Double?
 
     /// `true` if  `Pager` can be dragged
-    var allowsDragging: Bool = true
+    @State var allowsDragging: Bool = true
 
     /// `true` if  `Pager`interacts with the digital crown
     var allowsDigitalCrownRotation: Bool = true
